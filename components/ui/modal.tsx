@@ -30,7 +30,7 @@ export const Modal : React.FC<ModalProps> =({
     onClose()
    }
 }
-
+console.log(onClose)
 return (
     <Dialog open={isOpen} onOpenChange={onChange}>
         <DialogContent>
@@ -41,5 +41,5 @@ return (
             <div>{children}</div>
         </DialogContent>
     </Dialog>
-)
+) 
 };

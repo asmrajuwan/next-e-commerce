@@ -13,6 +13,7 @@ import { redirect } from "next/navigation";
         redirect('/sign-in');
       }
 
+     
       const store = await prismadb.store.findFirst({ 
         where: {
             userId,

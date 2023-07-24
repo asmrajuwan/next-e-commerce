@@ -32,8 +32,8 @@ interface StoreSwitcherProps extends PopoverTriggerProps {
 
 export default function StoreSwitcher({ className, items = [] }: StoreSwitcherProps) {
   const storeModal = useStoreModal();
+  
   const params = useParams();
-  console.log(params)
   const router = useRouter();
 
   const formattedItems = items.map((item) => ({
@@ -42,7 +42,7 @@ export default function StoreSwitcher({ className, items = [] }: StoreSwitcherPr
   }));
 
   const currentStore = formattedItems.find((item) => item.value === params.storeid);
-  console.log(currentStore,  'gfgc')
+  
 
   const [open, setOpen] = useState(false)
 
